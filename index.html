@@ -22,8 +22,6 @@
     <!-- Style sheets-->
     <link rel="stylesheet" href="css/all.css">
     <!-- font link here, change to another google font if you wish!-->
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- begin favicon stuff-->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -59,29 +57,30 @@
         <div id="logo">העמותה לעזרה מיידית<br/> לניצולי שואה</div>
         <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
           <ul class="in">
-            <li><a href="/">מי אנחנו</a></li>
+            <li><a href="#" class="who-nav">מי אנחנו</a></li>
           </ul>
           <ul class="in">
-            <li><a href="/">בתקשורת</a></li>
+            <li><a href="#" class="donate-nav">לתרומה</a></li>
           </ul>
           <ul class="in">
-            <li><a href="#" class="about">המתנדבים שלנו</a></li>
+            <li><a href="#" class="media-nav">בתקשורת</a></li>
           </ul>
           <ul class="in">
-            <li><a href="#" class="about">צור קשר</a></li>
+            <li><a href="#" class="volun-nav">המתנדבים שלנו</a></li>
           </ul>
           <ul class="in">
-            <li><a href="#" class="work">לתרומה</a></li>
+            <li><a href="#" class="contact-nav">צור קשר</a></li>
           </ul>
           <ul class="in">
             <li><a href="https://www.facebook.com/aihhs/"><img src="/img/FB-f-Logo__blue_29.png" /></a></li>
           </ul>
         </nav>
-        <div id="himage"><a href="#" class="btn">לתרומה</a></div>
+        <div id="himage"><a href="#" class="btn" style="visibility: hidden"></a></div>
       </div>
     </header>
     <section>
       <div class="container">
+        <div class="who"/>
         <h2 class="port">מי אנחנו</h1>
         <!-- Change paragraph text here, add subheadings by using h2 or h3 tags -->
         <p class="about-para">מדי שנה מאובחנים למעלה מ- 500 מקרים חדשים של ילדים בישראל, כחולים במחלת הסרטן וכ - 1,000 ילדים מטופלים אקטיבית. אבחון המחלה, האשפוז והטיפולים הקשים הכרוכים בה, מעמידים את הילדים ובני משפחותיהם בפני אתגרים רגשיים, תפקודיים וכלכליים רבים, ביניהם: חרדה, ייאוש, בלבול, חוסר ידע ויכולת לקבוע קדימויות, עייפות, בדידות, התנהלות מול המוסדות והתארגנות לוגיסטית בתוך המשפחה, רכישת תרופות ואיתור תמיכה כלכלית. בתום תקופת האשפוז, עם חזרת הילדים לביתם, מתמודדות המשפחות עם אתגרים הכרוכים בהשתלבות מחודשת במערך החיים, תוך שילוב עם שגרת המעקב והטיפולים.</p>
@@ -91,48 +90,64 @@
     </section>
     <section>
       <div class="container">
+        <div id="donate" class="donate"/>
         <h2 class="port">לתרומה</h1>
-        <div class="flex" style="align-items: flex-start;">
-          <div style="padding: 20px; text-align: center; width: 250px"><img style="padding: 10px;" src="/img/FB-f-Logo__blue_72.png" /><br/><b>כרטיס אשראי</b><br/><a href="#" class="btn">לתרומה</a></div>
-          <div style="padding: 20px; text-align: center; width: 250px"><img style="padding: 10px;" src="/img/FB-f-Logo__blue_72.png" /><br/><b>העברה בנקאית</b><br/>ניתן להעביר לחשבוננו<br/>בבנק הפועלים, סניף 680,<br/>מס׳ חשבון 178139</div>
-          <div style="padding: 20px; text-align: center; width: 250px"><img style="padding: 10px;" src="/img/FB-f-Logo__blue_72.png" /><br/><b>המחאה בדואר</b><br/>ניתן לשלוח המחאה בדואר<br/>ת.ד. 320 הרצליה<br/>מיקוד: 4610301</div>
-
+        <div class="flex" style="align-items: flex-start; justify-content: space-between;">
+          <div style="padding: 20px; text-align: center; width: 400px"><img style="padding: 10px;" src="/img/004-business-1.png" /><br/><b>כרטיס אשראי</b><br/><a href="#" class="contact-button">לאשראי לחץ כאן</a></div>
+          <div style="padding: 20px; text-align: center; width: 400px"><img style="padding: 10px;" src="/img/002-business-2.png" /><br/><b>העברה בנקאית</b><br/>ניתן להעביר לחשבוננו<br/>בבנק הפועלים, סניף 680,<br/>מס׳ חשבון 178139</div>
+        <div style="padding: 20px; text-align: center; width: 400px"><img style="padding: 10px;" src="/img/001-message.png" /><br/><b>המחאה בדואר</b><br/>ניתן לשלוח המחאה בדואר<br/>ת.ד. 320 הרצליה<br/>מיקוד: 4610301</div>
         </div>
       </div>
     </section>
     <section>
       <div class="container">
+        <div class="media"/>
         <h2 class="port">בתקשורת</h1>
-        <div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/e_oz7ZDg0kw" frameborder="0" allowfullscreen></iframe></div><div>
+        <div style="text-align: center"><iframe style="margin: 50px;" width="720" height="405" src="https://www.youtube.com/embed/e_oz7ZDg0kw" frameborder="0" allowfullscreen></iframe></div><div>
       </div>
     </section>
     <section id="activities">
+      <div class="volun"/>
       <!-- edit the H2 text if you need to-->
       <div class="container">
         <h2 class="port">המתנדבים שלנו</h2>
+        <p class="about-para">העמותה שמה לה למטרה ללוות את הילדים החולים ובני משפחותיהם מרגע אבחון המחלה עד להחלמה מלאה ולחולל שינוי משמעותי בחיי הילדים ומשפחותיהם באמצעות יצירת חוויות משמחות לצד שיפור מתמיד באיכות הטיפול והתנאים הרפואיים.</p>
         <div style="text-align: center;">
           <h3>אירועים</h3>
           <!-- change the links of the images and project title here!-->
-          <div class="flex">
-            <img src="/img/events1.jpg" style="height: 300px;" />
-            <img src="/img/events2.jpg" style="height: 300px;" />
+          <div class="flex" style="justify-content: space-around; margin: 0 10%;">
+            <img src="/img/events1.jpg" style="height: 300px; margin: 30px" />
+            <img src="/img/events2.jpg" style="height: 300px; margin: 30px" />
           </div>
         </div>
         <div style="text-align: center;">
-          <h3>מתקנים מזגנים</h3>
+          <h3>חלוקת מזון חם</h3>
           <!-- change the links of the images and project title here!-->
-          <div class="flex">
-          <figure id="one">
-            <figcaption id="img1" class="overlay">Project Title Goes Here!</figcaption><a href="http://externallinkgoeshere.co.uk" target="_blank"><img src="/img/photo-1.png" alt=""></a>
-          </figure>
-          <figure id="two">
-            <figcaption id="img2" class="overlay">Project Title Goes Here!</figcaption><a href="http://externallinkgoeshere.co.uk" target="_blank"><img src="/img/photo-2.png" alt=""></a>
-          </figure>
+          <div class="flex" style="justify-content: space-around; margin: 0 10%;">
+            <img src="/img/food1.jpg" style="height: 300px; margin: 30px" />
+            <img src="/img/food2.jpg" style="height: 300px; margin: 30px" />
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <h3>חלוקת מארזי מצרכים</h3>
+          <!-- change the links of the images and project title here!-->
+          <div class="flex" style="justify-content: space-around; margin: 0 10%;">
+            <img src="/img/products1.jpg" style="height: 300px; margin: 30px" />
+            <img src="/img/products2.jpg" style="height: 300px; margin: 30px" />
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <h3>התנדבות בעלי מקצוע</h3>
+          <!-- change the links of the images and project title here!-->
+          <div class="flex" style="justify-content: space-around; margin: 0 10%;">
+            <img src="/img/fix1.jpg" style="height: 300px; margin: 30px" />
+            <img src="/img/fix2.jpg" style="height: 300px; margin: 30px" />
           </div>
         </div>
       </div>
     </section>
     <section class="grey">
+      <div class="contant-nav"/>
       <div class="container">
       <div class="flex">
         <p class="contact">

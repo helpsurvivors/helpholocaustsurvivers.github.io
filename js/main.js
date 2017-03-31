@@ -16,18 +16,35 @@ $(document).ready(function() {
 // About Link going to about picture with supporting paragraphs
 
 $(document).ready(function() {
-  $('.about').click(function() {
+  $('.who-nav').click(function() {
     $('html, body').animate({
-      scrollTop: $('.self-pic').offset().top
+      scrollTop: $('.who').offset().top
     }, 1200);
   });
 });
 
 //Portfolio Link going to flexbox portfolio section
 $(document).ready(function() {
-  $('.work').click(function() {
+  $('.media-nav').click(function() {
     $('html, body').animate({
-      scrollTop: $('.flex').offset().top
+      scrollTop: $('.media').offset().top
+    }, 1200);
+  });
+});
+
+//Portfolio Link going to flexbox portfolio section
+$(document).ready(function() {
+  $('.donate-nav').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.donate').offset().top
+    }, 1200);
+  });
+});
+
+$(document).ready(function() {
+  $('.volun-nav').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.volun').offset().top
     }, 1200);
   });
 });
@@ -37,15 +54,6 @@ $(document).ready(function() {
   $('.contact-nav').click(function() {
     $('html, body').animate({
       scrollTop: $('.contact').offset().top
-    }, 1200);
-  });
-});
-
-// Work link going to portfolio section
-$(document).ready(function() {
-  $('.work').click(function() {
-    $('html, body').animate({
-      scrollTop: $('.flex').offset().top
     }, 1200);
   });
 });
