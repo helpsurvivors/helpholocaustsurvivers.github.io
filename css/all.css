@@ -727,22 +727,18 @@ nav {
   }
 }
 
-@media (min-width: 12.5em) {
-  #activities > img {
+@media (max-width: 63em) {
+  #activities img {
     width: 100%;
+    margin: 20px;
   }
 }
 
 @media (min-width: 63em) {
-  #activities > img {
+  #activities img {
     height: 300px;
-    width: 300px;
+    margin: 30px;
   }
-}
-
-img:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .overlay {
