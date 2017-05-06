@@ -41,21 +41,9 @@
   </head>
   <body>
     <header>
-      <!--<div class="overlay-nav hidden">
-        <ul class="mobile">
-          <li><a href="#" class="about">ABOUT</a></li>
-        </ul>
-        <ul class="mobile">
-          <li><a href="#" class="work">WORK</a></li>
-        </ul>
-        <ul class="mobile">
-          <li><a href="#" class="contact-nav">CONTACT</a></li>
-        </ul>
-        <div class="close"></div>
-      </div>-->
       <div class="container">
         <div id="logo">העמותה לעזרה מיידית<br/> לניצולי שואה</div>
-        <a href="https://www.facebook.com/aihhs/"><img src="/img/FB-f-Logo__blue_29.png" style="float: left; margin: 13px 20px;" /></a>
+        <a class="fbnav" href="https://www.facebook.com/aihhs/"><img src="/img/FB-f-Logo__blue_29.png" style="float: left; margin: 13px 20px;" /></a>
         <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
           <ul class="in">
             <li><a href="#" class="who-nav">מי אנחנו</a></li>
@@ -64,10 +52,10 @@
             <li><a href="#" class="donate-nav">לתרומה</a></li>
           </ul>
           <ul class="in">
-            <li><a href="#" class="media-nav">בתקשורת</a></li>
+            <li><a href="#" class="volun-nav">להתנדבות</a></li>
           </ul>
           <ul class="in">
-            <li><a href="#" class="volun-nav">המתנדבים שלנו</a></li>
+            <li><a href="#" class="media-nav">בתקשורת</a></li>
           </ul>
           <ul class="in">
             <li><a href="#" class="contact-nav">צור קשר</a></li>
@@ -78,8 +66,8 @@
     <section><div id="himage"/></section>
     <section>
       <div class="container">
-        <div class="who" />
-        <h2 class="port">מי אנחנו</h1>
+        <div id="who" class="who" />
+        <h2 class="port">מי אנחנו</h2>
         <!-- Change paragraph text here, add subheadings by using h2 or h3 tags -->
         <p class="about-para"><b>"העמותה לעזרה מיידית לניצולי השואה"</b> הוקמה בעזרת מתנדבים, אשר סייעו באופן פרטי לניצולי שואה נזקקים ובודדים במשך שנים ארוכות, תוך ציפייה לכך שמדינת ישראל סוף סוף תיקח על עצמה את האחריות לרווחתם של ניצולי השואה. לאחר שנים ארוכות שהדבר לא קרה, והניצולים בהם טיפלו מתנדבי העמותה נפטרו, חלקם כתוצאה ישירה מההזנחה של המדינה ומחוסר כסף, החליטו מתנדבי העמותה להקים עמותה שתטפל בלא בירוקרטיה, בלא צורך במילוי טפסים, באופן מיידי ובכל תחומי החיים האפשריים בניצולי השואה.</p>
         <p class="about-para">העמותה נרשמה כחוק באפריל 2008, מספר ימים לפני פסח 2008 ומיד ערכה מבצע ענק בכל הארץ, לחלוקת מאות ארוחות חג חגיגיות לניצולי שואה בודדים ונזקקים.</p>
@@ -93,24 +81,41 @@
     <section>
       <div class="container">
         <div id="donate" class="donate"/>
-        <h2 class="port">לתרומה</h1>
-        <div class="flex" style="align-items: flex-start; justify-content: space-between;">
-          <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/004-business-1.png" /><br/><b>כרטיס אשראי</b><br/><a href="https://direct.tranzila.com/helpsurvivors/" class="contact-button">לאשראי לחץ כאן</a></div>
-          <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/002-business-2.png" /><br/><b>העברה בנקאית</b><br/>ניתן להעביר לחשבוננו<br/>בבנק הפועלים, סניף 680,<br/>מס׳ חשבון 178139</div>
-        <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/001-message.png" /><br/><b>המחאה בדואר</b><br/>ניתן לשלוח המחאה בדואר<br/>ת.ד. 320 הרצליה<br/>מיקוד: 4610301</div>
+        <h2 class="port">לתרומה</h2>
+        <div class="flex" style="align-items: flex-start; justify-content: space-around;">
+          <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/004-business-1.png" /><br/><b>לתרומה כספית באמצעות<br/>כרטיס אשראי</b><br/><a href="https://direct.tranzila.com/helpsurvivors/" class="contact-button">לאשראי לחצו כאן</a></div>
+          <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/002-business-2.png" /><br/><b>העברה בנקאית</b><br/>ניתן להעביר לחשבוננו בבנק<br/>הפועלים, סניף 680, מס׳ חשבון 178139</br><a href="https://docs.google.com/forms/d/e/1FAIpQLSddt2Jl-Il-2AKQfEaukxHAVWQqqIZVv3wPSlnFViEDfKE4Sg/viewform?usp=sf_link" style="font-weight: bold; text-decoration: underline">אנא מלא פרטיך למעקב</a></div>
+        <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/001-message.png" /><br/><b>המחאה בדואר</b><br/>ניתן לשלוח המחאה בדואר<br/>ת.ד. 320 הרצליה, מיקוד: 4610301<br/><a href="https://docs.google.com/forms/d/e/1FAIpQLSddt2Jl-Il-2AKQfEaukxHAVWQqqIZVv3wPSlnFViEDfKE4Sg/viewform?usp=sf_link" style="font-weight: bold; text-decoration: underline;">אנא מלא פרטיך למעקב</a></div>
+        <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/002-groceries.png" /><br/><b>מצרכים</b><br/>מוצרי מזון יבשים, מוצרי ניקוי וטואלטיקה<br/><a href="donation.html" class="contact-button">לתרומת מצרכים לחצו כאן</a></div>
+        <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/003-food-1.png" /><br/><b>מזון מבושל</b><br/>מוצרי מזון יבשים, מוצרי ניקוי וטואלטיקה<br/><a href="donation.html" class="contact-button">לתרומת מזון מבושל לחצו כאן</a></div>
+        <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/002-wardrobe.png" /><br/><b>רהיטים</b><br/>מוצרי מזון יבשים, מוצרי ניקוי וטואלטיקה<br/><a href="donation.html" class="contact-button">לתרומת רהיטים לחצו כאן</a></div>
+        <div style="padding: 20px; text-align: center; width: 360px"><img style="padding: 10px;" src="/img/001-refrigerator.png" /><br/><b>מוצרי חשמל</b><br/>מוצרי מזון יבשים, מוצרי ניקוי וטואלטיקה<br/><a href="donation.html" class="contact-button">לתרומת מוצרי חשמל לחצו כאן</a></div>
         </div>
       </div>
     </section>
     <section>
       <div class="container">
-        <div class="media"/>
+        <div id="volun" class="volun" />
+        <h2 class="port">להתנדבות</h2>
+        <p class="about-para">בעמותה לעזרה מיידית לניצולי השואה רשומים כרגע כ-15,000 מתנדבים בכל הארץ. עיקר הצורך שלנו כרגע כדי לסייע לניצולי שואה רבים נוספים הוא:<br/></p>
+        <div style="padding-right: 10px; padding-top: 5px">
+        <div style="display: flex; padding: 4px 0;"><div><img style="padding: 0px 20px;" src="/img/004-man-in-office-desk-with-computer.png" /></div><div><b>התנדבות בניהול העמותה</b> - לאחר הדרכה של כ-20 שעות בבית העמותה ניתן להמשיך ולסייע מהבית</div></div>
+        <div style="display: flex; padding: 4px 0;"><div><img style="padding: 0px 20px;" src="/img/005-help-the-elderly.png" /></div><div><b>ליווי ניצולי שואה</b> - לאחר הדרכה של כ-20 שעות בבית העמותה ניתן להמשיך ולסייע מהבית</div></div>
+        <div style="display: flex; padding: 4px 0;"><div><img style="padding: 0px 20px;" src="/img/002-cleaning-lady.png" /></div><div><b>תחזוקת בתי ניצולים</b> - לאחר הדרכה של כ-20 שעות בבית העמותה ניתן להמשיך ולסייע מהבית</div></div>
+        <div style="display: flex; padding: 4px 0;"><div><img style="padding: 0px 20px;" src="/img/003-sports-car.png" /></div><div><b>הסעת ניצולי שואה</b> - לאחר הדרכה של כ-20 שעות בבית העמותה ניתן להמשיך ולסייע מהבית</div></div>
+        <div style="display: flex; padding: 4px 0;"><div><img style="padding: 0px 20px;" src="/img/001-group.png" /></div><div><b>בעלי מקצוע</b> - לאחר הדרכה של כ-20 שעות בבית העמותה ניתן להמשיך ולסייע מהבית</div></div>
+        </div>
+        <div style="padding-bottom: 10px; padding-right: 10px"><a href="https://docs.google.com/forms/d/e/1FAIpQLScHmjAjLvuEdxSvnzJysVMU2kP2avG99_uGjc2RGcL5u7WS8Q/viewform?usp=sf_link" class="contact-button" style="display: inline-block;">להתנדבות בעמותה לחצו כאן</a></div>
+<p>אנא קחו בחשבון שכולנו מתנדבים בעמותה ואין רכז/ת מתנדבים בשכר שכל תפקידה הוא לענות לפונים.</p>
+<p>אנו ניצור עמכם קשר בהקדם האפשרי. אם תחום ההתנדבות שפניתם אליו הוא תחום שאנו זקוקים לו באופן מיידי- ניצור עמכם קשר בשבועיים הקרובים לכל היותר. אתם תמיד מוזמנים להשאיר שוב הודעה בפייסבוק ואנו מתנצלים מראש על חוסר האפשרות לענות מיידית לכל הפניות שכן אנו מקבלים אלפי הודעות (חלקן פניות בבקשה לסייע לניצולי שואה המקבלות עדיפות עליונה) ויכולים לענות ככל שיש לנו מתנדבים הפנויים לתת מענה.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div id="media" class="media"/>
         <h2 class="port">בתקשורת</h2>
         <div class="video-container" style="text-align: center"><iframe src="https://www.youtube.com/embed/e_oz7ZDg0kw" frameborder="0" allowfullscreen></iframe></div>
-        <div class="flex" style="justify-content: space-around; margin: 3% 10%;">
-            <img src="/img/mariv.jpg"/>
-             
-        </div>
-
+        <div style="text-align: center; padding-top: 10px;"><img id="mediaphoto" src="/img/mariv.jpg"/></div>
         <div class="container">
             <p><font size="6" >כתבות נוספות</font></p>
             <p><a href="http://www.globes.co.il/news/article.aspx?did=1001028526"><font size="4" > גלובס: 189 אלף ניצולי שואה חיים בישראל - מה תוכלו לתרום להם?</font></a></p>
@@ -118,11 +123,9 @@
             <p><a href="http://www.israelhayom.co.il/site/newsletter_article.php?id=11047"><font size="4" > הקרב על הבית</font></a></p>
              
         </div>
-       
-
     </section>
     <section id="activities">
-      <div class="volun"/>
+      <div>
       <!-- edit the H2 text if you need to-->
       <div class="container">
         <h2 class="port">המתנדבים שלנו</h2>
@@ -165,14 +168,14 @@
       <div class="contant-nav"/>
       <div class="container">
       <div class="flex">
-        <p class="contact">
-<b>העמותה לעזרה מיידית לניצולי השואה</b><br/>
+        <p id="contact" class="contact">
+<div style="display: inline; padding-left: 40px;"><b>העמותה לעזרה מיידית לניצולי השואה</b><br/>
 <b>טלפון</b>: 03-5257888<br/>
 <b>כתובת</b>: רמבה 8, רמת גן<br/>
 ת.ד. 320, הרצליה, 4610301<br/>
-<b>עמותה רשומה מספר</b>: 580494250
+<b>עמותה רשומה מספר</b>: 580494250</div>
+<div style="display: inline-block;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSck9mYEhosRS8kSIaBI10lSc69yDIOEXtzIu_jmB_pnliBRHQ/viewform?usp=sf_link " class="contact-button">לדיווח על ניצול שזקוק לעזרה</a></div>
  </p><a href="mailto:Help1945@gmail.com " class="contact-button">צור קשר</a>
-        
           <div class="social-media"><a href="https://www.facebook.com/aihhs/"><img src="/img/FB-f-Logo__blue_72.png" /></a></div>
         </div>
       </div>
